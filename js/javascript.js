@@ -1,9 +1,10 @@
 $(document).ready(function () {
     
+    const markX = [];
+    const markO= [];
     let count = 0;    
     $('.box').on("click", function (event) {
-        const markX = [];
-        const markO= [];
+
         count++; 
         console.log(count);
         $("#counter").html(+count);
@@ -19,6 +20,21 @@ else {
         event.target.innerHTML = "0";
 
 }
+
+// make array of x's choices 
+
+
+const XChoices = [];
+XChoices.push(markX);
+console.log(XChoices);
+
+// $('img').hide(); 
+
+// const winningCombinations = 
+//     [["1","2","3"],["4","5","6"],["7","8","9"],["1","4","7"],["2","5","8"],["3","6","9"],["1","5","9"],["3","5","7"]];
+
+// winningCombinations(markX, "X");
+// winningCombinations(markO, "O");
 
 
 })});
