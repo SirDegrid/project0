@@ -1,19 +1,62 @@
 $(document).ready(function () {
     
-   $('.box').on("click", function (event) {
-    const markX = [];
-    const markO= [];
-
+    let count = 0;    
+    $('.box').on("click", function (event) {
+        const markX = [];
+        const markO= [];
+        count++; 
+        console.log(count);
+        $("#counter").html(+count);
+if (count %2 === 0)    
+{
     markX.push(event.target.id);
-    console.log(markX);
     event.target.innerHTML = "X";
+    console.log(markX); 
+}
+else {
+        markO.push(event.target.id);
+        console.log(markO);
+        event.target.innerHTML = "0";
+
+}
+
+
+})});
+
+
+
+
+
+//         for (let i = 0; i <= 20; i++) {
+//         console.log(i);
+//         // markX.push(event.target.id);
+//         // event.target.innerHTML = "X";
+//         // console.log(markX);    
+//     } else {       
+//          //  markO.push(event.target.id);
+//         // console.log(markO);
+//         // event.target.innerHTML = "0";
+
+//     console.log(i);
+// }
+//     }
+//         count++;
+// }});
+
+
+    //MAKE A HIDDEN thing TO COUNT TURNS
+// ****ODD OR EVEN*****
+    // for (let i = 0; i <= 20; i++) {
+    //     if (i % 2 === 0) {
+    //         console.log(`${ i } is even`);
+    //     } else {
+    //         console.log(`${ i } is odd`);
+    //     }
+    // }
        
-    // markO.push(event.target.id);
-    // console.log(markO);
-    // event.target.innerHTML = "0";
+ 
         
-    
-})})
+
 
 
 //     ***test alert *** $('#foo').bind('click', function() {
