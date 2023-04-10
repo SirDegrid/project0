@@ -2,7 +2,6 @@ body {
     background: lightgrey;
 }
 .box { 
-border: solid black; 
 width: 100px;
 height: 100px;
 text-align: center;
@@ -13,4 +12,26 @@ table {
 }
 h1 {
     text-align: center;
+    padding-bottom: 15px;
+    font-family: 'Montserrat', sans-serif; 
+    padding-top: 15px;
 }
+
+div {
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-family: 'Montserrat', sans-serif; 
+}
+
+table td{
+    border:2px solid black;
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 40px;
+    }
+
+table{
+    border-collapse:collapse;
+    border:2px solid black;
+    border-style: hidden;
+    }
